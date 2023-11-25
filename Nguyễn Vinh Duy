@@ -1,0 +1,29 @@
+Bài 7
+using  System;
+using  System.Collections.Generic; using  System.Linq;
+using  System.Text;
+using  System.Threading.Tasks;
+
+namespace Bài_7
+{
+internal  class  Program
+{
+static  void  Main(string[]  args)
+ 
+{
+Console.OutputEncoding  =  Encoding.UTF8; Console.Write("Nhập  chỉ số điện  cũ:  ");
+int  chiSoCu  =  Convert.ToInt32(Console.ReadLine());
+Console.Write("Nhập  chỉ số điện  mới:  ");
+int  chiSoMoi  =  Convert.ToInt32(Console.ReadLine());
+int  soDienTieuThu  =  chiSoMoi  -  chiSoCu;
+const  double  VATRate  =  0.1;  
+const  double  GiaBanDien  =  3000;  
+double  tienDien  =  soDienTieuThu  *  GiaBanDien;
+double  tienDienVAT  =  tienDien  +  (tienDien  *  VATRate);
+
+Console.WriteLine("Số điện  tiêu  thụ:  {0}",  soDienTieuThu); Console.WriteLine("Tiền  điện:  {0}  VNĐ",  tienDien); Console.WriteLine("Tiền  điện  (đ bao  gồm  VAT):  {0}  VNĐ",  tienDienVAT);
+
+Console.ReadKey();
+}
+}
+}
