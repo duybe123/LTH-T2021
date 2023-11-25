@@ -1,0 +1,27 @@
+Bài 5
+using  System;
+using  System.Collections.Generic; using  System.Linq;
+using  System.Text;
+using  System.Threading.Tasks;
+
+namespace  Bài_5
+{
+internal  class  Program
+{
+static  void  Main(string[]  args)
+{
+Console.OutputEncoding  =  Encoding.UTF8; Console.WriteLine("Nhập  điểm:  ");
+float  diem  =  Convert.ToSingle(Console.ReadLine());
+string  xeploaihocsinh; if  (diem  >=  9)
+xeploaihocsinh  =  "Xuất  sắc"; else  if  (diem  >=  8)
+xeploaihocsinh  =  "Giỏi"; else  if  (diem  >=  6.5)
+xeploaihocsinh  =  "khá"; else  if  (diem  >=  5)
+xeploaihocsinh  =  "Trung  Bình"; else  if  (diem  >=  3.5)
+xeploaihocsinh  =  "Yếu";
+ 
+else
+xeploaihocsinh  =  "Kém";
+Console.WriteLine(xeploaihocsinh);
+}
+}
+}
